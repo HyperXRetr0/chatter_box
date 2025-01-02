@@ -10,7 +10,7 @@ function Hero() {
       <Card
         height="440px"
         width="480px"
-        title={"Chatter.up"}
+        title={"Chatter.box"}
         tag={"Your goto place for random group chats..."}
       >
         <RoomInput />
