@@ -18,15 +18,15 @@ function ChatInput({ socket }: { socket: WebSocket | undefined }) {
     chatRef.current.value = "";
   }
   return (
-    <div className="flex bg-white rounded-full sticky bottom-0 shadow-xl">
+    <div className="bg-white rounded-full shadow-xl relative pr-10">
       <input
         ref={chatRef}
         type="text"
-        className="rounded-full focus:outline-none px-4"
+        className="rounded-full focus:outline-none h-8 pl-4"
       />
       <Button
         override={true}
-        className="text-white bg-slate-900 rounded-full p-2"
+        className="text-white bg-slate-900 rounded-full h-8 w-8 flex justify-center items-center absolute right-0 top-0"
         onClick={handleClick}
       >
         <BsSend />
